@@ -14,7 +14,7 @@
    <children>
      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../BackArrow_purple-removebg-preview.png" />
+            <Image url="@../../images/BackArrow_purple-removebg-preview.png" />
          </image>
       </ImageView>
       <VBox layoutX="36.0" layoutY="110.0" prefHeight="187.0" prefWidth="161.0">
@@ -58,7 +58,7 @@
       </Label>
       <ImageView fitHeight="172.0" fitWidth="152.0" layoutX="33.0" layoutY="315.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../download%20(7).jpeg" />
+            <Image url="@../../images/download%20(7).jpeg" />
          </image>
       </ImageView>
    </children>

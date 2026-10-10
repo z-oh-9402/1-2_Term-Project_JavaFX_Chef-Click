@@ -12,7 +12,7 @@
    <children>
      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../BackArrow_brownish-removebg-preview-removebg-preview-removebg-preview.png" />
+            <Image url="@../../images/BackArrow_brownish-removebg-preview-removebg-preview-removebg-preview.png" />
          </image>
       </ImageView>
       <Label layoutX="63.0" layoutY="33.0" prefHeight="45.0" text="Order Status" textFill="#e43a7c">
@@ -38,7 +38,7 @@
       </ButtonBar>
       <ImageView fitHeight="150.0" fitWidth="168.0" layoutX="440.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Premium_Vector___Delivery_boy_with_box_cartoon_art_illustration-removebg-preview.png" />
+            <Image url="@../../images/Premium_Vector___Delivery_boy_with_box_cartoon_art_illustration-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

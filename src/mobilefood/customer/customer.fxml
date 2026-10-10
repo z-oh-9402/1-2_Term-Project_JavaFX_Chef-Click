@@ -68,7 +68,7 @@
       </Label>
       <ImageView fitHeight="293.0" fitWidth="215.0" layoutX="362.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Download_cute_chef_boy_holding_a_hot_dog__fast_food_logo_illustration_concept_for_free-removebg-preview%20(1).png" />
+            <Image url="@../../images/Download_cute_chef_boy_holding_a_hot_dog__fast_food_logo_illustration_concept_for_free-removebg-preview%20(1).png" />
          </image>
       </ImageView>
       <Line endX="22.0" endY="396.3333435058594" layoutX="230.0" layoutY="55.0" startX="22.0" startY="-6.333332061767578" stroke="WHITE" />

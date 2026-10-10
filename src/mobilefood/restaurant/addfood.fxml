@@ -17,7 +17,7 @@
          </font></Label>
       <ImageView fx:id="backToLogin" fitHeight="20.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../BackArrow_brownish-removebg-preview-removebg-preview.png" />
+            <Image url="@../../images/BackArrow_brownish-removebg-preview-removebg-preview.png" />
          </image>
       </ImageView>
       <Label fx:id="categoryLabel" layoutX="261.0" layoutY="228.0" text="Category" textFill="WHITE">
@@ -43,7 +43,7 @@
       </Label>
       <ImageView fitHeight="291.0" fitWidth="259.0" layoutY="206.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Download_cute_chef_girl_holding_a_hot_dog__fast_food_logo_illustration_concept_for_free__1_-removebg-preview.png" />
+            <Image url="@../../images/Download_cute_chef_girl_holding_a_hot_dog__fast_food_logo_illustration_concept_for_free__1_-removebg-preview.png" />
          </image>
       </ImageView>
       <ButtonBar layoutX="269.0" layoutY="341.0" prefHeight="40.0" prefWidth="228.0">

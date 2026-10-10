@@ -13,7 +13,7 @@
    <children>
       <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../BackArrow_purple-removebg-preview.png" />
+            <Image url="@../../images/BackArrow_purple-removebg-preview.png" />
          </image>
       </ImageView>
       <VBox layoutX="33.0" layoutY="180.0" prefHeight="285.0" prefWidth="161.0">
@@ -68,7 +68,7 @@
       <TextField fx:id="search2" layoutX="397.0" layoutY="33.0" prefHeight="33.0" style="-fx-background-radius: 50px;" visible="false" />
       <ImageView fitHeight="166.0" fitWidth="161.0" layoutX="41.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Premium_Vector___Cute_moslem_female_chef-removebg-preview.png" />
+            <Image url="@../../images/Premium_Vector___Cute_moslem_female_chef-removebg-preview.png" />
          </image>
       </ImageView>
    </children>

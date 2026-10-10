@@ -218,7 +218,7 @@ public class ChatPageController {
         text.setPrefHeight(39);
         text.setPrefWidth(318);
 
-        imageView = new ImageView("C:\\Users\\HP\\Desktop\\BUET\\1-2\\OOP\\Java_Term_Project_Part_2\\MobileFood\\images-removebg-preview.png");
+        imageView = new ImageView("images/images-removebg-preview.png");
         imageView.setLayoutX(546);
         imageView.setLayoutY(441);
         imageView.setPickOnBounds(true);

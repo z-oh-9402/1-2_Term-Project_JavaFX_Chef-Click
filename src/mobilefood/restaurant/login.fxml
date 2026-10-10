@@ -62,7 +62,7 @@
       </Label>
       <ImageView fitHeight="272.0" fitWidth="214.0" layoutX="372.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Chef_garota_segurando_uma_concha_de_sopa_-_desenho_do_chef___Vetor_Premium-removebg-preview%20(1).png" />
+            <Image url="@../../images/Chef_garota_segurando_uma_concha_de_sopa_-_desenho_do_chef___Vetor_Premium-removebg-preview%20(1).png" />
          </image>
       </ImageView>
       <Label layoutX="131.0" layoutY="71.0" prefHeight="74.0" prefWidth="326.0" text="ChefClick" textAlignment="CENTER" textFill="#e4819f">
@@ -72,7 +72,7 @@
       </Label>
       <ImageView fitHeight="89.0" fitWidth="65.0" layoutX="386.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../click-icon-selection-amp-cursors-icon-jbADqEM7-removebg-preview.png" />
+            <Image url="@../../images/click-icon-selection-amp-cursors-icon-jbADqEM7-removebg-preview.png" />
          </image>
       </ImageView>
    </children>
