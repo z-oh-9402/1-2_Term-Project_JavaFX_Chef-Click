@@ -2,7 +2,7 @@
 # Usage: ./run.sh <server|restaurant|customer|build|clean>
 # Needs JDK 17+ and JavaFX. Set JAVAFX_LIB to your JavaFX "lib" folder if it is not auto-detected.
 set -e
-cd "$(dirname "$0")"   # the server reads/writes the .txt data files from here
+cd "$(dirname "$0")"   # the server reads/writes datafiles/*.txt relative to here
 
 find_javafx() {
     local d

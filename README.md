@@ -26,7 +26,7 @@ The script compiles automatically when sources change. `./run.sh build` compiles
 `./run.sh clean` removes the build output.
 
 Run the server from the project folder: it reads and writes `restaurant.txt`,
-`customer.txt` and `menu.txt` there. You can start several restaurant and customer clients.
+`customer.txt` and `menu.txt` in `datafiles/`. You can start several restaurant and customer clients.
 
 ## Try it
 1. Register a restaurant in the restaurant app and add some food to its menu.
@@ -39,7 +39,7 @@ Run the server from the project folder: it reads and writes `restaurant.txt`,
 - `src/mobilefood/passableobjects` - objects sent over the network
 - `src/networking` - socket wrapper and read threads
 - `src/images` - all images (loaded from the classpath)
-- `restaurant.txt`, `customer.txt`, `menu.txt` - the data files the server reads and writes
+- `datafiles` - `restaurant.txt`, `customer.txt`, `menu.txt`: the data files the server reads and writes
 
 ## Windows
 `run.sh` needs a bash shell (Git Bash or WSL). Otherwise compile and run with

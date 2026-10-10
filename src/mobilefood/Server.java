@@ -21,6 +21,8 @@ import networking.SocketWrapper;
 import networking.ReadThreadServer;
 
 public class Server {
+    // relative to the project root, which is where run.sh starts the server
+    private static final String DATA_DIR = "datafiles/";
     private Vector<Restaurant> restaurants;
     private ServerSocket serverSocket;
     private SocketWrapper socketWrapper;
@@ -111,7 +113,7 @@ public class Server {
     {
         try{
             StringCorrector strc = new StringCorrector();
-            BufferedReader br = new BufferedReader(new FileReader("restaurant.txt"));
+            BufferedReader br = new BufferedReader(new FileReader(DATA_DIR + "restaurant.txt"));
             while (true) 
             {
                 String line = br.readLine();
@@ -139,7 +141,7 @@ public class Server {
     {
         try{
             StringCorrector strc = new StringCorrector();
-            FileReader file = new FileReader("menu.txt");
+            FileReader file = new FileReader(DATA_DIR + "menu.txt");
             BufferedReader br = new BufferedReader(file);
 
             while (true) 
@@ -163,7 +165,7 @@ public class Server {
     {
         try{
             StringCorrector strc = new StringCorrector();
-            BufferedReader br = new BufferedReader(new FileReader("customer.txt"));
+            BufferedReader br = new BufferedReader(new FileReader(DATA_DIR + "customer.txt"));
             while (true) 
             {
                 String line = br.readLine();
@@ -320,7 +322,7 @@ public class Server {
             else
             {
                 customerPass.put(username,password);
-                BufferedWriter bw = new BufferedWriter(new FileWriter("customer.txt",true));
+                BufferedWriter bw = new BufferedWriter(new FileWriter(DATA_DIR + "customer.txt",true));
                 bw.write(username+","+password);
                 bw.write(System.lineSeparator());
                 bw.close();
@@ -348,7 +350,7 @@ public class Server {
             socketWrapper.write(restaurants.size()+1);
             Restaurant r = (Restaurant)socketWrapper.read();
             restaurants.add(r);
-            BufferedWriter bw = new BufferedWriter(new FileWriter("restaurant.txt",true));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(DATA_DIR + "restaurant.txt",true));
             restaurantNameToId.put(r.getName(),r.getId());
             if(!restaurantMap.containsKey(r.getName()))
             {
@@ -423,7 +425,7 @@ public class Server {
                     }
                 }
             }).start();
-            BufferedWriter bw = new BufferedWriter(new FileWriter("menu.txt",true));
+            BufferedWriter bw = new BufferedWriter(new FileWriter(DATA_DIR + "menu.txt",true));
             bw.write(obj.getStringInfo());
             bw.write(System.lineSeparator());
             bw.close();
