@@ -43,7 +43,7 @@
       </ButtonBar>
       <ImageView fx:id="backToLogin" fitHeight="20.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/BackArrow_pink-removebg-preview.png" />
+            <Image url="@../../images/backarrows/backarrow_dark-pink.png" />
          </image>
       </ImageView>
       <Label fx:id="alertText" layoutX="308.0" layoutY="415.0" opacity="0.0" text="Mendatory Field Empty!!!" textFill="RED">
@@ -53,7 +53,7 @@
       </Label>
       <ImageView fitHeight="260.0" fitWidth="163.0" layoutX="14.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/Premium_Vector___Cute_chef_boy_-_cartoon_art_illustration__mascot_-removebg-preview.png" />
+            <Image url="@../../images/characters/char10.png" />
          </image>
       </ImageView>
       <Label layoutX="131.0" layoutY="71.0" prefHeight="74.0" prefWidth="326.0" text="ChefClick" textAlignment="CENTER" textFill="#e4819f">
@@ -63,7 +63,7 @@
       </Label>
       <ImageView fitHeight="89.0" fitWidth="65.0" layoutX="386.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/click-icon-selection-amp-cursors-icon-jbADqEM7-removebg-preview.png" />
+            <Image url="@../../images/utils/click.png" />
          </image>
       </ImageView>
    </children>

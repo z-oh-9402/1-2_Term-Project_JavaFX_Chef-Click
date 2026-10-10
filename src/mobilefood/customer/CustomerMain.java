@@ -41,7 +41,7 @@ public class CustomerMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Login");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -58,7 +58,7 @@ public class CustomerMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Register");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -75,7 +75,7 @@ public class CustomerMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Home");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -91,7 +91,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this);
 
         stage.setTitle("Search Restaurant");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -107,7 +107,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this);
 
         stage.setTitle("Search Food");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -123,7 +123,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this,restaurant,str);
 
         stage.setTitle("Search Food in a Restaurant");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -139,7 +139,7 @@ public class CustomerMain extends Application {
         controller.init(restaurant,this);
 
         stage.setTitle("Restaurant profile");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -155,7 +155,7 @@ public class CustomerMain extends Application {
         controller.init(restaurant,this,manager);
 
         stage.setTitle("Cart");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -171,7 +171,7 @@ public class CustomerMain extends Application {
         controller.init(restaurant,this);
 
         stage.setTitle("Menu");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -187,7 +187,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this);
 
         stage.setTitle("Orders");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -203,7 +203,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this,restaurant);
 
         stage.setTitle("Text");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -220,7 +220,7 @@ public class CustomerMain extends Application {
         controller.init(manager,this,restaurantName);
 
         stage.setTitle("Chat List");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }

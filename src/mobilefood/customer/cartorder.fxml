@@ -72,7 +72,7 @@
                   <Line endX="-100.00003051757812" endY="51.00000762939453" layoutX="505.0" layoutY="9.0" startX="-100.0" />
                   <ImageView fx:id="imageView" fitHeight="60.0" fitWidth="63.0" layoutX="413.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../../images/Screenshot_2023-09-13_111306-removebg-preview.png" />
+                        <Image url="@../../images/utils/trash.png" />
                      </image>
                   </ImageView>
                </children>

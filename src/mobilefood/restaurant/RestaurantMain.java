@@ -41,7 +41,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Login");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -58,7 +58,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Register");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -76,7 +76,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Register");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -93,7 +93,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Home");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -110,7 +110,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Add Food");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -127,7 +127,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Menu");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -144,7 +144,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Orders");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }
@@ -162,7 +162,7 @@ public class RestaurantMain extends Application {
 
         // Set the primary stage
         stage.setTitle("Chat List");
-        stage.getIcons().add(new Image("images/Cute_chef_boy_cartoon_character-removebg-preview.png"));
+        stage.getIcons().add(new Image("images/characters/char2.png"));
         stage.setScene(new Scene(root, 600, 500));
         stage.show();
     }

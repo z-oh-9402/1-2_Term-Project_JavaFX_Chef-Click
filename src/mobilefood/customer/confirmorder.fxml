@@ -15,7 +15,7 @@
       </Label>
       <ImageView fx:id="backToLogin" fitHeight="20.0" fitWidth="25.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/BackArrow_green-removebg-preview.png" />
+            <Image url="@../../images/backarrows/backarrow_green.png" />
          </image>
       </ImageView>
       <Label layoutX="97.0" layoutY="56.0" prefHeight="45.0" text="Cart - " textFill="#2eae36">
@@ -25,7 +25,7 @@
       </Label>
       <ImageView fitHeight="149.0" fitWidth="213.0" layoutX="405.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/Premium_Vector___Side_view_delivery_boy_holding_box__delivery_concept_cartoon_art_illustration-removebg-preview.png" />
+            <Image url="@../../images/characters/char14.png" />
          </image>
       </ImageView>
    </children>

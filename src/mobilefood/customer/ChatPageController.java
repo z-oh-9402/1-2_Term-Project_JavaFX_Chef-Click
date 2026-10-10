@@ -28,7 +28,7 @@ import mobilefood.restaurant.Restaurant;
 public class ChatPageController {
     private CustomerMain main;
     private CustomerManager manager;
-    private HashMap<String,List<Pair<String,String>>> chatList;
+    private HashMap<String, List<Pair<String, String>>> chatList;
     private ScrollPane scrollPane;
     private ScrollPane scrollPane2;
     private TextField text;
@@ -44,63 +44,55 @@ public class ChatPageController {
     @FXML
     private AnchorPane container;
 
-    void init(CustomerManager manage,CustomerMain main,String name)
-    {
+    void init(CustomerManager manage, CustomerMain main, String name) {
         this.main = main;
         manager = manage;
         chatList = new HashMap<>();
         vBox1 = new VBox(8);
         scrollPane1.setContent(vBox1);
 
-        if(!manager.getChatList().isEmpty())
-        {
+        if (!manager.getChatList().isEmpty()) {
             vBox1.setPrefWidth(144);
             chatList = manager.getChatList();
 
-            for(Map.Entry<String,List<Pair<String,String>>> Name : chatList.entrySet())
-            {
+            for (Map.Entry<String, List<Pair<String, String>>> Name : chatList.entrySet()) {
                 Label label = new Label(Name.getKey());
                 Font font = new Font(18);
-                label.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
+                label.setFont(Font.font(font.getFamily(), FontWeight.BOLD, font.getSize()));
                 vBox1.getChildren().add(label);
                 label.setOnMouseEntered(e -> {
                     label.setUnderline(true);
                 });
-        
+
                 label.setOnMouseExited(e -> {
                     label.setUnderline(false);
                 });
                 label.setOnMouseClicked(e -> {
-                    try{
+                    try {
                         main.setRestaurantName(Name.getKey());
-                        showChatSection(Name.getKey(),Name.getValue());
-                    }
-                    catch(Exception ex)
-                    {
+                        showChatSection(Name.getKey(), Name.getValue());
+                    } catch (Exception ex) {
                         System.out.println(ex);
                     }
                 });
             }
 
-            if(!name.isEmpty())
-            {
-                showChatSection(name,chatList.get(name));
+            if (!name.isEmpty()) {
+                showChatSection(name, chatList.get(name));
             }
         }
 
-        else
-        {
+        else {
             emptyMessage = new Label("No Chat History");
             Font font = new Font(16);
-            emptyMessage.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
+            emptyMessage.setFont(Font.font(font.getFamily(), FontWeight.BOLD, font.getSize()));
             vBox1.getChildren().add(emptyMessage);
         }
     }
 
     @FXML
-    void addChat()
-    {
-        container.getChildren().removeAll(scrollPane,text,imageView,scrollPane2,rName);
+    void addChat() {
+        container.getChildren().removeAll(scrollPane, text, imageView, scrollPane2, rName);
         rName = new TextField("");
         container.getChildren().add(rName);
         rName.setPromptText("Enter a Restaurant Name");
@@ -113,11 +105,9 @@ public class ChatPageController {
         rName.textProperty().addListener(new ChangeListener<String>() {
             @Override
             public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                if(!rName.getText().isEmpty())
-                {
+                if (!rName.getText().isEmpty()) {
                     List<Restaurant> restaurants = manager.searchRestaurantByName(rName.getText());
-                    if(restaurants.size()!=0)
-                    {
+                    if (restaurants.size() != 0) {
                         container.getChildren().remove(scrollPane2);
                         scrollPane2 = new ScrollPane();
                         VBox vBox2 = new VBox(5);
@@ -129,33 +119,29 @@ public class ChatPageController {
                         vBox2.setPrefWidth(299);
                         container.getChildren().add(scrollPane2);
 
-                        for(Restaurant r : restaurants)
-                        {
+                        for (Restaurant r : restaurants) {
                             Label label = new Label(r.getName());
                             vBox2.getChildren().add(label);
                             Font font = new Font(16);
-                            label.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
-                            
-                            label.setOnMouseEntered(e->{
+                            label.setFont(Font.font(font.getFamily(), FontWeight.BOLD, font.getSize()));
+
+                            label.setOnMouseEntered(e -> {
                                 label.setUnderline(true);
                             });
-                            label.setOnMouseExited(e->{
+                            label.setOnMouseExited(e -> {
                                 label.setUnderline(false);
                             });
-                            label.setOnMouseClicked(e->{
+                            label.setOnMouseClicked(e -> {
                                 main.setRestaurantName(r.getName());
-                                container.getChildren().removeAll(rName,scrollPane2);
-                                List<Pair<String,String>> map = new ArrayList<>();
-                                if(!manager.getChatList().containsKey(r.getName()))
-                                {
-                                    manager.getChatList().put(r.getName(),map);
-                                }
-                                else
-                                {
+                                container.getChildren().removeAll(rName, scrollPane2);
+                                List<Pair<String, String>> map = new ArrayList<>();
+                                if (!manager.getChatList().containsKey(r.getName())) {
+                                    manager.getChatList().put(r.getName(), map);
+                                } else {
                                     map = manager.getChatList().get(r.getName());
                                 }
-                                
-                                init(manager,main,r.getName());
+
+                                init(manager, main, r.getName());
                             });
                         }
                     }
@@ -165,36 +151,29 @@ public class ChatPageController {
     }
 
     @FXML
-    void goToLogin()
-    {
-        try{
-            new Thread(()->{
+    void goToLogin() {
+        try {
+            new Thread(() -> {
                 List<String> list = new ArrayList<>();
-                for(Map.Entry<String,List<Pair<String,String>>> mp : manager.getChatList().entrySet())
-                {
-                    if(mp.getValue().size()==0)
-                    {
+                for (Map.Entry<String, List<Pair<String, String>>> mp : manager.getChatList().entrySet()) {
+                    if (mp.getValue().size() == 0) {
                         list.add(mp.getKey());
                     }
                 }
 
-                for(String key : list)
-                {
+                for (String key : list) {
                     manager.getChatList().remove(key);
                 }
             }).start();
-            
+
             main.showHomePage();
-        }
-        catch(Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e);
         }
     }
 
-    private void showChatSection(String restaurantName,List<Pair<String,String>> chat)
-    {
-        container.getChildren().removeAll(scrollPane,text,imageView,emptyMessage);
+    private void showChatSection(String restaurantName, List<Pair<String, String>> chat) {
+        container.getChildren().removeAll(scrollPane, text, imageView, emptyMessage);
 
         scrollPane = new ScrollPane();
         scrollPane.setLayoutX(220);
@@ -218,32 +197,28 @@ public class ChatPageController {
         text.setPrefHeight(39);
         text.setPrefWidth(318);
 
-        imageView = new ImageView("images/images-removebg-preview.png");
+        imageView = new ImageView("images/utils/paper-plane_green.png");
         imageView.setLayoutX(546);
         imageView.setLayoutY(441);
         imageView.setPickOnBounds(true);
         imageView.setFitWidth(34);
         imageView.setFitHeight(34);
-        imageView.setOnMouseClicked(e ->{
+        imageView.setOnMouseClicked(e -> {
             sendText(restaurantName);
         });
 
-        for(Pair<String,String> pair : chat)
-        {
+        for (Pair<String, String> pair : chat) {
             Label chatbox = new Label(pair.getValue());
             chatbox.setPadding(new Insets(10, 10, 10, 10));
             chatbox.setTextFill(Color.BLACK);
             Font font = new Font(12);
-            chatbox.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
+            chatbox.setFont(Font.font(font.getFamily(), FontWeight.BOLD, font.getSize()));
             HBox hBox = new HBox();
 
-            if(pair.getKey().equals(manager.getCustomerName()))
-            {
+            if (pair.getKey().equals(manager.getCustomerName())) {
                 hBox.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
                 chatbox.setStyle("-fx-background-color: #9CCF91;-fx-background-radius: 10px;");
-            }
-            else
-            {
+            } else {
                 hBox.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
                 chatbox.setStyle("-fx-background-color: #DEDEDE;-fx-background-radius: 10px;");
             }
@@ -252,23 +227,20 @@ public class ChatPageController {
             vBox.getChildren().add(hBox);
         }
 
-        container.getChildren().addAll(scrollPane,text,imageView);
+        container.getChildren().addAll(scrollPane, text, imageView);
     }
 
-    private void sendText(String Name)
-    {
-        if(!text.getText().isEmpty())
-        {
+    private void sendText(String Name) {
+        if (!text.getText().isEmpty()) {
             String message = text.getText();
             text.setText("");
             text.setPromptText("write something....");
 
-            chatList.get(Name).add(new Pair<>(manager.getCustomerName(),message));
-            try{
-                manager.getSocketWrapper().write(new Message(manager.getCustomerName(),Name,manager.getCustomerName(), message));
-            }
-            catch(Exception e)
-            {
+            chatList.get(Name).add(new Pair<>(manager.getCustomerName(), message));
+            try {
+                manager.getSocketWrapper()
+                        .write(new Message(manager.getCustomerName(), Name, manager.getCustomerName(), message));
+            } catch (Exception e) {
                 System.out.println(e);
             }
 
@@ -278,7 +250,7 @@ public class ChatPageController {
             chatbox.setPadding(new Insets(10, 10, 10, 10));
             chatbox.setTextFill(Color.BLACK);
             Font font = new Font(12);
-            chatbox.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
+            chatbox.setFont(Font.font(font.getFamily(), FontWeight.BOLD, font.getSize()));
             HBox hBox = new HBox();
             hBox.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
             hBox.getChildren().add(chatbox);

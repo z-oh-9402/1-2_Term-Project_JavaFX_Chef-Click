@@ -64,7 +64,7 @@
       </Label>
       <ImageView fitHeight="219.0" fitWidth="219.0" layoutX="5.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/Download_cute_bakery_chef_boy_holding_a_cake_and_bread_-_cartoon_character_and_logo_illustration_for_free-removebg-preview.png" />
+            <Image url="@../../images/characters/char4.png" />
          </image>
       </ImageView>
       <Line endX="100.0" endY="-62.66666030883789" layoutX="259.0" layoutY="120.0" startX="100.0" startY="317.9999694824219" stroke="WHITE" />

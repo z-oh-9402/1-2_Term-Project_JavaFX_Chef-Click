@@ -10,7 +10,7 @@
    <children>
      <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/BackArrow_olive-removebg-preview.png" />
+            <Image url="@../../images/backarrows/backarrow_olive.png" />
          </image>
       </ImageView>
       <Label layoutX="57.0" layoutY="67.0" prefHeight="58.0" prefWidth="149.0" text="Menu - " textFill="#bba37b">
@@ -20,7 +20,7 @@
       </Label>
       <ImageView fitHeight="294.0" fitWidth="236.0" layoutX="7.0" layoutY="218.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/Download_cute_chef_boy_holding_a_spatula_-_chef_cartoon_for_free__1_-removebg-preview.png" />
+            <Image url="@../../images/characters/char7.png" />
          </image>
       </ImageView>
    </children>

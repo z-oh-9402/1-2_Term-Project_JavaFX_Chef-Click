@@ -12,7 +12,7 @@
    <children>
       <ImageView fx:id="backToLogin" fitHeight="19.0" fitWidth="34.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#goToLogin" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/BackArrow_green-removebg-preview.png" />
+            <Image url="@../../images/backarrows/backarrow_green.png" />
          </image>
       </ImageView>
       <Label layoutX="14.0" layoutY="50.0" prefHeight="34.0" text="Chat List -" textFill="#5ad760">
@@ -22,7 +22,7 @@
       </Label>
       <ImageView fitHeight="241.0" fitWidth="242.0" layoutX="-19.0" layoutY="301.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../images/Screenshot_2023-09-13_135924-removebg-preview.png" />
+            <Image url="@../../images/characters/char16.png" />
          </image>
       </ImageView>
       <ScrollPane fx:id="scrollPane1" layoutX="22.0" layoutY="92.0" prefHeight="223.0" prefWidth="160.0" />
