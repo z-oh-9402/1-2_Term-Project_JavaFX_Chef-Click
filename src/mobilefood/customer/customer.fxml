@@ -17,17 +17,17 @@
             <Font name="Berlin Sans FB Demi Bold" size="40.0" />
          </font>
       </Label>
-      <Button fx:id="button" layoutX="39.0" layoutY="416.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="35.0" prefWidth="76.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Logout">
+      <Button fx:id="button" layoutX="39.0" layoutY="416.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="35.0" prefWidth="76.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="Logout">
          <font>
             <Font name="System Bold Italic" size="13.0" />
          </font></Button>
       <VBox layoutX="39.0" layoutY="61.0" prefHeight="287.0" prefWidth="185.0">
          <children>
-            <Button fx:id="searchRestaurant" mnemonicParsing="false" onMouseClicked="#restaurantSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Search Restaurant">
+            <Button fx:id="searchRestaurant" mnemonicParsing="false" onMouseClicked="#restaurantSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="Search Restaurant">
                <font>
                   <Font name="System Bold Italic" size="15.0" />
                </font></Button>
-            <Button fx:id="searchFood" mnemonicParsing="false" onMouseClicked="#foodSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Search Food Item">
+            <Button fx:id="searchFood" mnemonicParsing="false" onMouseClicked="#foodSearching" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="Search Food Item">
                <VBox.margin>
                   <Insets top="25.0" />
                </VBox.margin>
@@ -35,7 +35,7 @@
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="placeOrderButton" mnemonicParsing="false" onMouseClicked="#placingOrder" prefHeight="35.0" prefWidth="261.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="Place Order">
+            <Button fx:id="placeOrderButton" mnemonicParsing="false" onMouseClicked="#placingOrder" prefHeight="35.0" prefWidth="261.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="Place Order">
                <VBox.margin>
                   <Insets top="25.0" />
                </VBox.margin>
@@ -43,7 +43,7 @@
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="orderStatus" mnemonicParsing="false" onMouseClicked="#seeOrderStatus" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="See Order Status">
+            <Button fx:id="orderStatus" mnemonicParsing="false" onMouseClicked="#seeOrderStatus" prefHeight="35.0" prefWidth="268.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="See Order Status">
                <VBox.margin>
                   <Insets top="25.0" />
                </VBox.margin>
@@ -51,7 +51,7 @@
                   <Font name="System Bold Italic" size="15.0" />
                </font>
             </Button>
-            <Button fx:id="seeChat" mnemonicParsing="false" onMouseClicked="#showChat" prefHeight="35.0" prefWidth="194.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles.css" text="See Chats">
+            <Button fx:id="seeChat" mnemonicParsing="false" onMouseClicked="#showChat" prefHeight="35.0" prefWidth="194.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-olive.css" text="See Chats">
                <VBox.margin>
                   <Insets top="25.0" />
                </VBox.margin>

@@ -17,13 +17,13 @@
             <Font name="Berlin Sans FB Demi Bold" size="36.0" />
          </font>
       </Label>
-      <Button fx:id="button" layoutX="498.0" layoutY="402.0" mnemonicParsing="false" onAction="#logoutAction" styleClass="gradient-button" stylesheets="@../customer/style4.css" text="Logout">
+      <Button fx:id="button" layoutX="498.0" layoutY="402.0" mnemonicParsing="false" onAction="#logoutAction" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="Logout">
          <font>
             <Font name="System Bold Italic" size="14.0" />
          </font></Button>
       <VBox layoutX="381.0" layoutY="129.0" prefHeight="200.0" prefWidth="171.0">
          <children>
-            <Button fx:id="addFodd" mnemonicParsing="false" onMouseClicked="#foodAdding" prefHeight="33.0" prefWidth="177.0" styleClass="gradient-button" stylesheets="@../customer/style4.css" text="Add Food">
+            <Button fx:id="addFodd" mnemonicParsing="false" onMouseClicked="#foodAdding" prefHeight="33.0" prefWidth="177.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="Add Food">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -31,7 +31,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="seeMenu" mnemonicParsing="false" onMouseClicked="#showMenu" prefHeight="33.0" prefWidth="171.0" styleClass="gradient-button" stylesheets="@../customer/style4.css" text="See Menu">
+            <Button fx:id="seeMenu" mnemonicParsing="false" onMouseClicked="#showMenu" prefHeight="33.0" prefWidth="171.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="See Menu">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -39,7 +39,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="seeOrder" mnemonicParsing="false" onMouseClicked="#showingOrders" prefHeight="33.0" prefWidth="177.0" styleClass="gradient-button" stylesheets="@../customer/style4.css" text="See Orders">
+            <Button fx:id="seeOrder" mnemonicParsing="false" onMouseClicked="#showingOrders" prefHeight="33.0" prefWidth="177.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="See Orders">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -47,7 +47,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="seeChat" mnemonicParsing="false" onMouseClicked="#showChat" prefHeight="33.0" prefWidth="175.0" styleClass="gradient-button" stylesheets="@../customer/style4.css" text="See Chat Section">
+            <Button fx:id="seeChat" mnemonicParsing="false" onMouseClicked="#showChat" prefHeight="33.0" prefWidth="175.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="See Chat Section">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>

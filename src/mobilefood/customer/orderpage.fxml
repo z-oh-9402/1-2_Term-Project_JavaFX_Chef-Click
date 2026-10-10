@@ -22,15 +22,15 @@
       </Label>
       <ButtonBar layoutX="8.0" layoutY="102.0" prefHeight="35.0" prefWidth="432.0">
         <buttons>
-          <Button fx:id="addedToCartButton" mnemonicParsing="false" onMouseClicked="#showCartOrder" prefHeight="41.0" styleClass="gradient-button" stylesheets="@style3.css" text="Added To Cart">
+          <Button fx:id="addedToCartButton" mnemonicParsing="false" onMouseClicked="#showCartOrder" prefHeight="41.0" styleClass="gradient-button" stylesheets="@../../styles/button-pink.css" text="Added To Cart">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></Button>
-            <Button fx:id="pendingOrderButton" mnemonicParsing="false" onMouseClicked="#showPendingOrder" prefHeight="41.0" styleClass="gradient-button" stylesheets="@style3.css" text="Pending Order">
+            <Button fx:id="pendingOrderButton" mnemonicParsing="false" onMouseClicked="#showPendingOrder" prefHeight="41.0" styleClass="gradient-button" stylesheets="@../../styles/button-pink.css" text="Pending Order">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></Button>
-            <Button fx:id="confirmedOrderButton" mnemonicParsing="false" onMouseClicked="#showConfirmedOrder" prefHeight="35.0" prefWidth="136.0" styleClass="gradient-button" stylesheets="@style3.css" text="Confirmed Order">
+            <Button fx:id="confirmedOrderButton" mnemonicParsing="false" onMouseClicked="#showConfirmedOrder" prefHeight="35.0" prefWidth="136.0" styleClass="gradient-button" stylesheets="@../../styles/button-pink.css" text="Confirmed Order">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></Button>

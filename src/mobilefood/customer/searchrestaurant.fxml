@@ -18,11 +18,11 @@
       </ImageView>
       <VBox layoutX="33.0" layoutY="180.0" prefHeight="285.0" prefWidth="161.0">
          <children>
-            <Button fx:id="nameSearch" mnemonicParsing="false" onMouseClicked="#searchByName" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Name">
+            <Button fx:id="nameSearch" mnemonicParsing="false" onMouseClicked="#searchByName" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="By Name">
                <font>
                   <Font name="System Bold Italic" size="14.0" />
                </font></Button>
-            <Button fx:id="scoreSearch" mnemonicParsing="false" onMouseClicked="#searchByScore" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Score">
+            <Button fx:id="scoreSearch" mnemonicParsing="false" onMouseClicked="#searchByScore" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="By Score">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -30,7 +30,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="categorySearch" mnemonicParsing="false" onMouseClicked="#searchByCategory" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Category">
+            <Button fx:id="categorySearch" mnemonicParsing="false" onMouseClicked="#searchByCategory" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="By Category">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -38,7 +38,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="priceSearch" mnemonicParsing="false" onMouseClicked="#searchByPrice" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Price">
+            <Button fx:id="priceSearch" mnemonicParsing="false" onMouseClicked="#searchByPrice" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="By Price">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -46,7 +46,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="zipcodeSearch" mnemonicParsing="false" onMouseClicked="#searchByZipcode" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="By Zip Code">
+            <Button fx:id="zipcodeSearch" mnemonicParsing="false" onMouseClicked="#searchByZipcode" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="By Zip Code">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>
@@ -54,7 +54,7 @@
                   <Font name="System Bold Italic" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="restaurantList" mnemonicParsing="false" onMouseClicked="#showCategorizedList" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@styles2.css" text="Categorized List">
+            <Button fx:id="restaurantList" mnemonicParsing="false" onMouseClicked="#showCategorizedList" prefHeight="33.0" prefWidth="179.0" style="-fx-background-radius: 50px;" styleClass="gradient-button" stylesheets="@../../styles/button-purple.css" text="Categorized List">
                <VBox.margin>
                   <Insets top="15.0" />
                </VBox.margin>

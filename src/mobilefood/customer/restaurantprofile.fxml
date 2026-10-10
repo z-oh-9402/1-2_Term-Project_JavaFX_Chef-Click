@@ -33,12 +33,12 @@
       </Label>
       <VBox layoutX="62.0" layoutY="160.0" prefHeight="267.0" prefWidth="183.0">
          <children>
-            <Button fx:id="searchFood" mnemonicParsing="false" onMouseClicked="#foodSearching" prefHeight="42.0" prefWidth="184.0" styleClass="gradient-button" stylesheets="@style4.css" text="Search Food">
+            <Button fx:id="searchFood" mnemonicParsing="false" onMouseClicked="#foodSearching" prefHeight="42.0" prefWidth="184.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="Search Food">
                <font>
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="seeMenu" mnemonicParsing="false" onMouseClicked="#showMenu" prefHeight="42.0" prefWidth="185.0" styleClass="gradient-button" stylesheets="@style4.css" text="See Menu">
+            <Button fx:id="seeMenu" mnemonicParsing="false" onMouseClicked="#showMenu" prefHeight="42.0" prefWidth="185.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="See Menu">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
@@ -46,7 +46,7 @@
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="seeCart" mnemonicParsing="false" onMouseClicked="#showCartPage" prefHeight="42.0" prefWidth="189.0" styleClass="gradient-button" stylesheets="@style4.css" text="See Cart">
+            <Button fx:id="seeCart" mnemonicParsing="false" onMouseClicked="#showCartPage" prefHeight="42.0" prefWidth="189.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="See Cart">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
@@ -54,7 +54,7 @@
                   <Font name="System Bold Italic" size="16.0" />
                </font>
             </Button>
-            <Button fx:id="sendMessageButton" mnemonicParsing="false" onMouseClicked="#sendingMessage" prefHeight="42.0" prefWidth="195.0" styleClass="gradient-button" stylesheets="@style4.css" text="Send Message">
+            <Button fx:id="sendMessageButton" mnemonicParsing="false" onMouseClicked="#sendingMessage" prefHeight="42.0" prefWidth="195.0" styleClass="gradient-button" stylesheets="@../../styles/button-rose.css" text="Send Message">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>
