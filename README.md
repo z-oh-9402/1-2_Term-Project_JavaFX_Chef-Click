@@ -1,18 +1,44 @@
-## Getting Started
+# MobileFood
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A food-ordering desktop app written in Java with JavaFX. A central server connects
+**restaurant** clients and **customer** clients over sockets (port 12345): restaurants
+manage their menu and orders, customers search, order and chat.
 
-## Folder Structure
+## Requirements
+- JDK 17 or newer
+- JavaFX (OpenJFX)
+  - Ubuntu/Debian: `sudo apt install openjfx`
+  - macOS: `brew install openjfx`
+  - Otherwise download the SDK from <https://gluonhq.com/products/javafx/> and set
+    `JAVAFX_LIB=/path/to/javafx-sdk/lib` before running the commands below.
 
-The workspace contains two folders by default, where:
+## Run
+Open three terminals in the project folder:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+```bash
+./run.sh server       # 1. start first, keep running
+./run.sh restaurant   # 2. restaurant app
+./run.sh customer     # 3. customer app
+```
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+The script compiles automatically when sources change. `./run.sh build` compiles only,
+`./run.sh clean` removes the build output.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Run the server from the project folder: it reads and writes `restaurant.txt`,
+`customer.txt` and `menu.txt` there. You can start several restaurant and customer clients.
 
-## Dependency Management
+## Try it
+1. Register a restaurant in the restaurant app and add some food to its menu.
+2. Register a customer in the customer app, find the restaurant, and place an order.
+3. Use the chat and order pages on both sides.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Layout
+- `src/mobilefood/Server.java` - the server
+- `src/mobilefood/restaurant`, `src/mobilefood/customer` - the two JavaFX clients (controllers + FXML)
+- `src/mobilefood/passableobjects` - objects sent over the network
+- `src/networking` - socket wrapper and read threads
+
+## Windows
+`run.sh` needs a bash shell (Git Bash or WSL). Otherwise compile and run with
+`javac`/`java` and `--module-path <javafx>\lib --add-modules javafx.controls,javafx.fxml`,
+using `out` as the classpath and copying the `.fxml`/`.css` files from `src` into `out`.

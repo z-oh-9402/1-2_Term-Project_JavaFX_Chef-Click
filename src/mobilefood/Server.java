@@ -256,10 +256,7 @@ public class Server {
                     socketWrapper.write(1);
                     Restaurant r = restaurants.get(restaurantNameToId.get(username)-1);
                     socketWrapper.write(r);
-                    if(!restaurantMap.containsKey(username))
-                    {
-                        restaurantMap.put(username,new ArrayList<>());
-                    }
+                    restaurantMap.putIfAbsent(username, new ArrayList<>());
                     restaurantMap.get(username).add(socketWrapper);
                     new ReadThreadServer(this, socketWrapper);
                     new Thread(()->{
