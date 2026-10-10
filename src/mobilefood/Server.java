@@ -56,6 +56,7 @@ public class Server {
 
         try {
             serverSocket = new ServerSocket(12345);
+            System.out.println("Server started, listening on port 12345");
             while (true) {
                 socketWrapper = new SocketWrapper(serverSocket.accept());
                 serve();
