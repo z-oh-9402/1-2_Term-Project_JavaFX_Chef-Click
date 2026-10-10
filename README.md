@@ -11,12 +11,13 @@ manage their menu and orders, customers search, order and chat.
   - macOS: `brew install openjfx`
   - Otherwise download the SDK from <https://gluonhq.com/products/javafx/> and set
     `JAVAFX_LIB=/path/to/javafx-sdk/lib` before running the commands below.
+  - Some JavaFX warnings in the console (version mismatch, `Unsafe`) are harmless.
 
 ## Run
 Open three terminals in the project folder:
 
 ```bash
-./run.sh server       # 1. start first, keep running
+./run.sh server       # 1. start first, keep running (prints "Server started ...")
 ./run.sh restaurant   # 2. restaurant app
 ./run.sh customer     # 3. customer app
 ```
@@ -37,8 +38,10 @@ Run the server from the project folder: it reads and writes `restaurant.txt`,
 - `src/mobilefood/restaurant`, `src/mobilefood/customer` - the two JavaFX clients (controllers + FXML)
 - `src/mobilefood/passableobjects` - objects sent over the network
 - `src/networking` - socket wrapper and read threads
+- `src/images` - all images (loaded from the classpath)
+- `restaurant.txt`, `customer.txt`, `menu.txt` - the data files the server reads and writes
 
 ## Windows
 `run.sh` needs a bash shell (Git Bash or WSL). Otherwise compile and run with
 `javac`/`java` and `--module-path <javafx>\lib --add-modules javafx.controls,javafx.fxml`,
-using `out` as the classpath and copying the `.fxml`/`.css` files from `src` into `out`.
+using `out` as the classpath and copying the `.fxml`/`.css` files and the `images` folder from `src` into `out`.
