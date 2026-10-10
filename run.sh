@@ -37,7 +37,7 @@ needs_build() {
 case "$1" in
     build)      build ;;
     clean)      rm -rf out ;;
-    server)     needs_build && build; exec java -cp out mobilefood.Server ;;
+    server)     needs_build && build; exec java $MODS -cp out mobilefood.Server ;;
     restaurant) needs_build && build; exec java $MODS --enable-native-access=javafx.graphics -cp out mobilefood.restaurant.RestaurantMain ;;
     customer)   needs_build && build; exec java $MODS --enable-native-access=javafx.graphics -cp out mobilefood.customer.CustomerMain ;;
     *)          echo "Usage: ./run.sh <server|restaurant|customer|build|clean>"; exit 1 ;;
