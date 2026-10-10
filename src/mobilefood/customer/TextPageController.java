@@ -89,7 +89,7 @@ public class TextPageController {
 
             Label chatbox = new Label(message);
             chatbox.setAlignment(Pos.BASELINE_RIGHT);
-            chatbox.setStyle("-fx-background-color: #DBBC55;-fx-background-radius: 10px;");
+            chatbox.setStyle("-fx-background-color: #DBBC55;-fx-background-radius: 10px; -fx-text-fill: black;");
             chatbox.setPadding(new Insets(10, 10, 10, 10));
             Font font = new Font(12);
             chatbox.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
@@ -128,12 +128,12 @@ public class TextPageController {
             if(pair.getKey().equals(restaurant.getName()))
             {
                 hBox.setNodeOrientation(NodeOrientation.LEFT_TO_RIGHT);
-                chatbox.setStyle("-fx-background-color: #DEDEDE;-fx-background-radius: 10px;");
+                chatbox.setStyle("-fx-background-color: #DEDEDE;-fx-background-radius: 10px; -fx-text-fill: black;");
             }
             else
             {
                 hBox.setNodeOrientation(NodeOrientation.RIGHT_TO_LEFT);
-                chatbox.setStyle("-fx-background-color: #DBBC55;-fx-background-radius: 10px;");
+                chatbox.setStyle("-fx-background-color: #DBBC55;-fx-background-radius: 10px; -fx-text-fill: black;");
             }
 
             hBox.getChildren().add(chatbox);
