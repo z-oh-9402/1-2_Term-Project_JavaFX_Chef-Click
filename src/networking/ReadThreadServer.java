@@ -1,5 +1,6 @@
 package networking;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -47,20 +48,14 @@ public class ReadThreadServer implements Runnable {
                     {
                         if(restaurantMap.containsKey(obj.getReceiver()))
                         {
-                            for(SocketWrapper nu : restaurantMap.get(obj.getReceiver()))
-                            {
-                                nu.write(obj);
-                            }
+                            sendAll(restaurantMap.get(obj.getReceiver()), obj);
                         }
                     }
                     if(customerMap.containsKey(obj.getSender()))
                     {
                         if(customerMap.containsKey(obj.getSender()))
                         {
-                            for(SocketWrapper nu : customerMap.get(obj.getSender()))
-                            {
-                                nu.write(obj);
-                            }
+                            sendAll(customerMap.get(obj.getSender()), obj);
                         }
                         
                     }
@@ -158,20 +153,45 @@ public class ReadThreadServer implements Runnable {
                     {
                         nu = restaurantMap.get(obj.getRestaurantName());
                     }
-                    for(SocketWrapper socket : nu) 
-                    {
-                        socket.write(obj);
-                    }
+                    sendAll(nu, obj);
                 }
             }
+        } catch (EOFException e) {
+            System.out.println("client disconnected");
         } catch (Exception e) {
             System.out.println(e);
         } finally {
+            removeSocket(customerMap);
+            removeSocket(restaurantMap);
             try {
                 socketWrapper.closeConnection();
             } catch (IOException e) {
                 e.printStackTrace();
             }
+        }
+    }
+
+    private void sendAll(List<SocketWrapper> sockets, Object obj)
+    {
+        if(sockets == null)
+        {
+            return;
+        }
+        for(SocketWrapper socket : new ArrayList<>(sockets))
+        {
+            try {
+                socket.write(obj);
+            } catch (IOException e) {
+                System.out.println("could not send to a client: " + e);
+            }
+        }
+    }
+
+    private void removeSocket(HashMap<String,List<SocketWrapper>> map)
+    {
+        for(List<SocketWrapper> sockets : map.values())
+        {
+            sockets.remove(socketWrapper);
         }
     }
 
