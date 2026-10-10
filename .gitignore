@@ -1,1 +1,31 @@
+# Compiled output
+bin/
+out/
+target/
+build/
+*.class
+
+# Bundled JavaFX SDK (platform-specific, large)
 javafx-sdk-20.0.2/
+
+# Packaged artifacts
+*.jar
+!lib/*.jar
+*.war
+
+# IDE / editor
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs / temp
+*.log
+*.tmp
+hs_err_pid*
