@@ -4,6 +4,23 @@ A food-ordering desktop app written in Java with JavaFX. A central server connec
 **restaurant** clients and **customer** clients over sockets (port 12345). Restaurants manage
 their menu and orders; customers search for restaurants and food, order, and chat.
 
+## Screenshots
+
+### Customer app
+
+<table>
+<tr><td align="center"><img src="docs/screenshots/customer-login.png" width="290"><br><sub>Login</sub></td><td align="center"><img src="docs/screenshots/customer-home.png" width="290"><br><sub>Customer home</sub></td><td align="center"><img src="docs/screenshots/customer-search-restaurants.png" width="290"><br><sub>Browse restaurants</sub></td></tr>
+<tr><td align="center"><img src="docs/screenshots/customer-restaurant-profile.png" width="290"><br><sub>Restaurant profile</sub></td><td align="center"><img src="docs/screenshots/customer-search-food.png" width="290"><br><sub>Live food search</sub></td><td align="center"><img src="docs/screenshots/customer-cart.png" width="290"><br><sub>Cart</sub></td></tr>
+<tr><td align="center"><img src="docs/screenshots/customer-order-status.png" width="290"><br><sub>Order status</sub></td><td align="center"><img src="docs/screenshots/customer-chat.png" width="290"><br><sub>Chat with the restaurant</sub></td></tr>
+</table>
+
+### Restaurant app
+
+<table>
+<tr><td align="center"><img src="docs/screenshots/restaurant-home.png" width="290"><br><sub>Restaurant home</sub></td><td align="center"><img src="docs/screenshots/restaurant-menu.png" width="290"><br><sub>Menu</sub></td><td align="center"><img src="docs/screenshots/restaurant-orders.png" width="290"><br><sub>Incoming orders</sub></td></tr>
+<tr><td align="center"><img src="docs/screenshots/restaurant-chat.png" width="290"><br><sub>Chat with customers</sub></td></tr>
+</table>
+
 ## Requirements
 - JDK 17 or newer
 - JavaFX (OpenJFX)
@@ -48,6 +65,7 @@ resolved relative to it. To reset everything, stop the server and delete `datafi
 - `src/images` - images, loaded from the classpath (`characters/`, `backarrows/`, `utils/`)
 - `src/styles` - stylesheets: button colour themes and the scrollbar style
 - `datafiles/` - runtime data, created by the server (git-ignored)
+- `docs/screenshots` - the screenshots shown above
 
 ## Windows
 `run.sh` needs a bash shell (Git Bash or WSL). Otherwise compile and run by hand with
