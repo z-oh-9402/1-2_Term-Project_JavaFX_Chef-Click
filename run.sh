@@ -25,7 +25,7 @@ MODS="--module-path $FX --add-modules javafx.controls,javafx.fxml"
 build() {
     mkdir -p out
     javac $MODS -d out $(find src -name '*.java')
-    (cd src && find . \( -name '*.fxml' -o -name '*.css' \) -exec cp --parents {} ../out \;)
+    (cd src && find . \( -name '*.fxml' -o -name '*.css' -o -path './images/*' \) -type f -exec cp --parents {} ../out \;)
     touch out/.built
 }
 

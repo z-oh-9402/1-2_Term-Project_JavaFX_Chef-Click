@@ -10,7 +10,6 @@ javafx-sdk-20.0.2/
 
 # Packaged artifacts
 *.jar
-!lib/*.jar
 *.war
 
 # IDE / editor
