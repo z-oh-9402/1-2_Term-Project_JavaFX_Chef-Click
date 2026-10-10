@@ -75,7 +75,6 @@ public class ReadThreadRestaurant implements Runnable {
                     //     HashMap<Food,Integer> foodCount = obj.getOrders();
                     //     for(Map.Entry<Food,Integer> mp : foodCount.entrySet())
                     //     {
-                    //         manager.increaseOrderCount(mp.getKey(), mp.getValue());
                     //     }
                     // }).start();
                     Platform.runLater(new Runnable() {

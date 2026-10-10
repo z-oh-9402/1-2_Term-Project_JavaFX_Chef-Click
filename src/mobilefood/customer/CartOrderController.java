@@ -22,9 +22,6 @@ public class CartOrderController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private Label orderCount;
 
     @FXML
@@ -46,7 +43,6 @@ public class CartOrderController {
         name.setText(F.getKey().getName());
         price.setText(Double.toString(F.getKey().getPrice()));
         category.setText(F.getKey().getCategory());
-        totalOrder.setText(Integer.toString(F.getKey().getAllTimeOrderCount()));
         orderCount.setText(Integer.toString(F.getValue()));
         DecimalFormat dec = new DecimalFormat("0.00");
         totalPrice.setText(dec.format(F.getValue()*F.getKey().getPrice()));
@@ -71,7 +67,6 @@ public class CartOrderController {
         name.setText(F.getKey().getName());
         price.setText(Double.toString(F.getKey().getPrice()));
         category.setText(F.getKey().getCategory());
-        totalOrder.setText(Integer.toString(F.getKey().getAllTimeOrderCount()));
         orderCount.setText(Integer.toString(F.getValue()));
         anchor.setStyle("-fx-background-color: #3DB879;-fx-background-radius: 10px;");
         DecimalFormat dec = new DecimalFormat("0.00");

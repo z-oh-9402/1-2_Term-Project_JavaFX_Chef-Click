@@ -35,16 +35,6 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="133.0" layoutY="28.0" text="All Time Order: " textFill="#000001">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="totalOrder" layoutX="237.0" layoutY="28.0" text="Label" textFill="#000001">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
                </children>
             </AnchorPane>
          </children>

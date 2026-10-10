@@ -19,9 +19,6 @@ public class NotCartOrderController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private Label orderCount;
 
     @FXML

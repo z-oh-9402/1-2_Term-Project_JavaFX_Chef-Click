@@ -20,9 +20,6 @@ public class NotCartOrderController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private Label orderCount;
 
     @FXML
@@ -44,7 +41,6 @@ public class NotCartOrderController {
         name.setText(f.getKey().getName());
         price.setText(Double.toString(f.getKey().getPrice()));
         category.setText(f.getKey().getCategory());
-        totalOrder.setText(Integer.toString(f.getKey().getAllTimeOrderCount()));
         orderCount.setText(Integer.toString(f.getValue()));
         DecimalFormat dec = new DecimalFormat("0.00");
         totalPrice.setText(dec.format(f.getValue()*f.getKey().getPrice()));

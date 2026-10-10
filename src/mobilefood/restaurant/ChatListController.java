@@ -1,5 +1,7 @@
 package mobilefood.restaurant;
 
+import mobilefood.ScrollStyle;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -43,6 +45,7 @@ public class ChatListController {
         manager = manage;
         chatList = new HashMap<>();
         vBox1 = new VBox(8);
+        ScrollStyle.apply(scrollPane1);
         scrollPane1.setContent(vBox1);
 
         if (!manager.getchatList().isEmpty()) {
@@ -97,6 +100,7 @@ public class ChatListController {
         container.getChildren().removeAll(scrollPane, text, imageView, emptyMessage);
 
         scrollPane = new ScrollPane();
+        ScrollStyle.apply(scrollPane);
         scrollPane.setLayoutX(220);
         scrollPane.setLayoutY(25);
         scrollPane.setPrefHeight(397);

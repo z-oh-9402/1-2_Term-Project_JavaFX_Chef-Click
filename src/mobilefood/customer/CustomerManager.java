@@ -221,7 +221,6 @@ public class CustomerManager {
             
             if(menu.size()!=0)
             {
-                Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
                 F.put(i+1,menu);
             }
         }
@@ -244,7 +243,6 @@ public class CustomerManager {
         }
         if(menu.size()!=0)
         {
-            Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
         }
         return menu;
     }
@@ -265,7 +263,6 @@ public class CustomerManager {
             }
             if(menu.size()!=0)
             {
-                Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
                 F.put(i+1,menu);
             }
         }
@@ -291,7 +288,6 @@ public class CustomerManager {
         }
         if(menu.size()!=0)
         {
-            Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
         }
         return menu;
     }
@@ -316,7 +312,6 @@ public class CustomerManager {
             
             if(menu.size()!=0)
             {
-                Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
                 F.put(i+1,menu);
             }
         }
@@ -339,7 +334,6 @@ public class CustomerManager {
         }
         if(menu.size()!=0)
         {
-            Collections.sort(menu,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
         }
         return menu;
     }
@@ -362,7 +356,6 @@ public class CustomerManager {
         }
         if(food.size()!=0)
         {
-            Collections.sort(food,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
         }
         return food;
     }

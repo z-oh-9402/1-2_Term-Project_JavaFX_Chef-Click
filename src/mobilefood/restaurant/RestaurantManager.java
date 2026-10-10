@@ -54,18 +54,4 @@ public class RestaurantManager {
             chatList.put(customerName,list);
         }
     }
-
-    public void increaseOrderCount(Food F,int c)
-    {
-        List<Food> list = restaurant.getMenu().get(F.getCategory());
-        for(Food item : list)
-        {
-            if(item.equals(F))
-            {
-                int count = item.getAllTimeOrderCount();
-                item.setAllTimeOrderCount(count+c);
-                break;
-            }
-        }
-    }
 }

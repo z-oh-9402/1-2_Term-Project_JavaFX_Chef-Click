@@ -7,7 +7,6 @@ public class Food  implements Serializable{
     private String category;
     private String name;
     private double price;
-    private int allTimeOrderCount;
 
     public Food(int restaurantId, String category, String name, double price)
     {
@@ -15,7 +14,6 @@ public class Food  implements Serializable{
         this.category = category;
         this.name = name;
         this.price = price;
-        allTimeOrderCount = 0;
     }
 
     public int getRestaurantId()
@@ -41,16 +39,6 @@ public class Food  implements Serializable{
     public String getStringInfo()
     {
         return new String(restaurantId+","+category+","+name+","+price);
-    }
-
-    public int getAllTimeOrderCount()
-    {
-        return allTimeOrderCount;
-    }
-
-    public void setAllTimeOrderCount(int count)
-    {
-        allTimeOrderCount = count;
     }
 
     public boolean equals(Food obj)

@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -87,9 +89,10 @@ public class OrderPageController {
     {
         container.getChildren().remove(message);
         container.getChildren().remove(scrollPane);
-        if(!orders.isEmpty())
+        if(orders.values().stream().anyMatch(m -> !m.isEmpty()))
         {
             scrollPane = new ScrollPane();
+            ScrollStyle.apply(scrollPane);
             scrollPane.setLayoutX(49);
             scrollPane.setLayoutY(168);
             scrollPane.setPrefHeight(300);
@@ -101,6 +104,10 @@ public class OrderPageController {
             vBox.setStyle("-fx-background-color: #000000;");
             for(Map.Entry<String,HashMap<Integer,HashMap<Food,Integer>>> restaurantName : orders.entrySet())
             {
+                if(restaurantName.getValue().isEmpty())
+                {
+                    continue;
+                }
                 VBox vBox1 = new VBox(20);
                 vBox1.setPrefWidth(490);
                 vBox1.setStyle("-fx-background-color: #000000;");

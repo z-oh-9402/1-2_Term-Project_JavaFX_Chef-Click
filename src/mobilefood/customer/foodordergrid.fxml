@@ -38,16 +38,6 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="89.0" layoutY="28.0" text="All Time Order: " textFill="#000001">
-                     <font>
-                        <Font name="System Bold" size="14.0" />
-                     </font>
-                  </Label>
-                  <Label fx:id="totalOrder" layoutX="193.0" layoutY="28.0" text="Label" textFill="#000001">
-                     <font>
-                        <Font size="14.0" />
-                     </font>
-                  </Label>
                   <Line endX="-4.66668701171875" endY="-19.666677474975586" layoutX="247.0" layoutY="29.0" startX="-4.66668701171875" startY="33.00000762939453" />
                   <ImageView fx:id="imageView" fitHeight="55.0" fitWidth="53.0" layoutX="254.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
                      <image>

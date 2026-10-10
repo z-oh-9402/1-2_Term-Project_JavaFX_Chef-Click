@@ -19,9 +19,6 @@ public class FoodOrderGridController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private ImageView imageView;
 
     @FXML
@@ -40,7 +37,6 @@ public class FoodOrderGridController {
         name.setText(F.getName());
         price.setText(Double.toString(F.getPrice()));
         category.setText(F.getCategory());
-        totalOrder.setText(Integer.toString(F.getAllTimeOrderCount()));
 
         if(!foodCount.containsKey(F)){
             count.setVisible(false);

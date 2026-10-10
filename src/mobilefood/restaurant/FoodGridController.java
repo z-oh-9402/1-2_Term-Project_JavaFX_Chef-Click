@@ -15,9 +15,6 @@ public class FoodGridController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private AnchorPane anchor;
 
     public AnchorPane getAnchorPane()

@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -54,6 +56,7 @@ public class MenuPageController {
         if(!menu.isEmpty())
         {
             scrollPane = new ScrollPane();
+            ScrollStyle.apply(scrollPane);
             scrollPane.setLayoutX(239);
             scrollPane.setLayoutY(36);
             scrollPane.setPrefHeight(427);
@@ -74,7 +77,6 @@ public class MenuPageController {
                 vBox.getChildren().add(label);
 
                 List<Food> list = category.getValue();
-                Collections.sort(list,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(), food1.getAllTimeOrderCount()));
                 VBox vBox2 = new VBox(9);
                 vBox2.setPrefWidth(324);
 

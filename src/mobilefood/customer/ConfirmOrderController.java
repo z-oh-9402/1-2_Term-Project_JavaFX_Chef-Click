@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -60,6 +62,7 @@ public class ConfirmOrderController {
             if(orders.containsKey(restaurant.getName()))
             {
                 scrollPane = new ScrollPane();
+                ScrollStyle.apply(scrollPane);
                 scrollPane.setLayoutX(49);
                 scrollPane.setLayoutY(168);
                 scrollPane.setPrefHeight(300);

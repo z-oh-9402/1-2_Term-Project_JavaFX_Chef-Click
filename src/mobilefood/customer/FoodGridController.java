@@ -16,9 +16,6 @@ public class FoodGridController {
     private Label category;
 
     @FXML
-    private Label totalOrder;
-
-    @FXML
     private AnchorPane anchor;
 
     public AnchorPane getAnchorPane()
@@ -31,7 +28,6 @@ public class FoodGridController {
         name.setText(f.getName());
         price.setText(Double.toString(f.getPrice()));
         category.setText(f.getCategory());
-        totalOrder.setText(Integer.toString(f.getAllTimeOrderCount()));
         if(flag == 1)
         {
             anchor.setStyle("-fx-background-color: #bba37b;-fx-background-radius: 10px;");

@@ -1,5 +1,7 @@
 package mobilefood.restaurant;
 
+import mobilefood.ScrollStyle;
+
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
@@ -51,13 +53,16 @@ public class ShowMenuController {
         if(!menu.isEmpty())
         {
             scrollPane = new ScrollPane();
+            ScrollStyle.apply(scrollPane);
             scrollPane.setLayoutX(29);
             scrollPane.setLayoutY(88);
             scrollPane.setPrefHeight(386);
             scrollPane.setPrefWidth(340);
+            scrollPane.setStyle("-fx-background: #000000; -fx-background-color: #000000");
 
             VBox vBox = new VBox(30);
             vBox.setPrefWidth(324);
+            vBox.setStyle("-fx-background-color: #000000;");
             for(Map.Entry<String,List<Food>> category : menu.entrySet())
             {
                 VBox vBox1 = new VBox(15);
@@ -66,10 +71,10 @@ public class ShowMenuController {
                 Label label = new Label(category.getKey());
                 Font font = new Font(18);
                 label.setFont(Font.font(font.getFamily(),FontWeight.BOLD,font.getSize()));
+                label.setStyle("-fx-text-fill: #ffc5cb;");
                 vBox.getChildren().add(label);
 
                 List<Food> list = category.getValue();
-                Collections.sort(list,(food1,food2)->Integer.compare(food2.getAllTimeOrderCount(),food1.getAllTimeOrderCount()));
                 VBox vBox2 = new VBox(9);
                 vBox2.setPrefWidth(324);
 

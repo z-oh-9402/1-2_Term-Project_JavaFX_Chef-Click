@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -145,6 +147,7 @@ public class SearchRestaurantController {
         search2.setVisible(false);
         search1.setVisible(false);
         scrollPane = new ScrollPane();
+        ScrollStyle.apply(scrollPane);
         scrollPane.setLayoutX(237);
         scrollPane.setLayoutY(37);
         scrollPane.setPrefWidth(340);
@@ -225,6 +228,7 @@ public class SearchRestaurantController {
     {
         container.getChildren().remove(scrollPane);
         scrollPane = new ScrollPane();
+        ScrollStyle.apply(scrollPane);
         scrollPane.setLayoutX(237);
         scrollPane.setLayoutY(86);
         scrollPane.setPrefWidth(340);

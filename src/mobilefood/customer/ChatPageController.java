@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -49,6 +51,7 @@ public class ChatPageController {
         manager = manage;
         chatList = new HashMap<>();
         vBox1 = new VBox(8);
+        ScrollStyle.apply(scrollPane1);
         scrollPane1.setContent(vBox1);
 
         if (!manager.getChatList().isEmpty()) {
@@ -110,6 +113,7 @@ public class ChatPageController {
                     if (restaurants.size() != 0) {
                         container.getChildren().remove(scrollPane2);
                         scrollPane2 = new ScrollPane();
+                        ScrollStyle.apply(scrollPane2);
                         VBox vBox2 = new VBox(5);
                         scrollPane2.setContent(vBox2);
                         scrollPane2.setLayoutX(254);
@@ -176,6 +180,7 @@ public class ChatPageController {
         container.getChildren().removeAll(scrollPane, text, imageView, emptyMessage);
 
         scrollPane = new ScrollPane();
+        ScrollStyle.apply(scrollPane);
         scrollPane.setLayoutX(220);
         scrollPane.setLayoutY(25);
         scrollPane.setPrefHeight(397);

@@ -1,5 +1,7 @@
 package mobilefood.customer;
 
+import mobilefood.ScrollStyle;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,6 +42,7 @@ public class TextPageController {
         this.restaurant = restaurant;
         chatList = new ArrayList<>();
         scrollPane = new ScrollPane();
+        ScrollStyle.apply(scrollPane);
         vBox = new VBox(12);
         scrollPane.setContent(vBox);
 
