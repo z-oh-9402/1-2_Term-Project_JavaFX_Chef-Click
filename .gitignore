@@ -28,3 +28,6 @@ Thumbs.db
 *.log
 *.tmp
 hs_err_pid*
+
+# Server data (created on first run)
+datafiles/

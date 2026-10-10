@@ -52,6 +52,8 @@ public class Server {
         pendingOrderRestaurant = new HashMap<>();
         confirmedOrder = new HashMap<>();
 
+        createDataFiles();
+
         new Thread(this::fileReading3,"T3").start();
         fileReading1();
         new Thread(this::fileReading2,"T2").start();
@@ -107,6 +109,27 @@ public class Server {
     public HashMap<String,HashMap<String,HashMap<Integer,HashMap<Food,Integer>>>> getConfirmedOrder()
     {
         return confirmedOrder;
+    }
+
+    // On a fresh checkout the data folder does not exist yet: create it and the empty data files.
+    private void createDataFiles()
+    {
+        try{
+            java.nio.file.Files.createDirectories(java.nio.file.Paths.get(DATA_DIR));
+            for(String name : new String[]{"restaurant.txt","menu.txt","customer.txt"})
+            {
+                java.nio.file.Path file = java.nio.file.Paths.get(DATA_DIR + name);
+                if(!java.nio.file.Files.exists(file))
+                {
+                    java.nio.file.Files.createFile(file);
+                    System.out.println("Created " + file);
+                }
+            }
+        }
+        catch(IOException e)
+        {
+            System.out.println("Could not create data files: " + e);
+        }
     }
 
     private void fileReading1()
