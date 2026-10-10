@@ -185,13 +185,11 @@ public class ChatPageController {
         scrollPane.setLayoutY(25);
         scrollPane.setPrefHeight(397);
         scrollPane.setPrefWidth(360);
-        scrollPane.setStyle("-fx-background-radius: 10px;");
-        scrollPane.setStyle("-fx-border-radius: 10px;");
+        scrollPane.setStyle("-fx-background: transparent; -fx-background-color: transparent; -fx-background-radius: 10px;");
 
         vBox = new VBox(12);
         vBox.setPrefWidth(344);
-        vBox.setStyle("-fx-background-radius: 10px;");
-        vBox.setStyle("-fx-border-radius: 10px;");
+        vBox.setStyle("-fx-background-color: transparent;");
         scrollPane.setContent(vBox);
 
         text = new TextField();

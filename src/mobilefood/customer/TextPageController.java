@@ -45,6 +45,8 @@ public class TextPageController {
         ScrollStyle.apply(scrollPane);
         vBox = new VBox(12);
         scrollPane.setContent(vBox);
+        scrollPane.setStyle("-fx-background: transparent; -fx-background-color: transparent;");
+        vBox.setStyle("-fx-background-color: transparent;");
 
         scrollPane.setPrefWidth(325);
         scrollPane.setPrefHeight(363);
